@@ -17,7 +17,7 @@ db = client[DB_NAME]
 
 app = Flask(__name__)
 
-@app.route('/template/index.html', methods=['GET'])
+@app.route('/', methods=['GET'])
 def home():
     return render_template('dashboard.html')
 
